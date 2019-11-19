@@ -46,6 +46,15 @@ You will need an account with the following services:
 
 5. Open Microsoft Teams and update the status page by typing `@StatusPage` to summon the bot followed by `open We are experiencing a problem. Standby for more information`
 
+Available commands are: 
+
+``` node
+        @${StatusPage} open [message]
+        @${StatusPage} update [message]
+        @${StatusPage} close [message]
+        @${StatusPage} help`
+```
+
 ## Final Result should look like this
 
 ![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer2.gif)

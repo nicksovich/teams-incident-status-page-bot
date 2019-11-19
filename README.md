@@ -1,6 +1,6 @@
 # Reindeer Status
 
-![Reindeer](/src/functions-javascript/homepage/img/reindeer2.gif)
+![Reindeer](https://jhandcdn.blob.core.windows.net/blob/reindeer.gif)
 
 ## Deployment instructions:
 
@@ -23,3 +23,5 @@
     ![Webhook details](webhook-info.png)
 
     You will be prompted with a secret code for validating webhook calls from Teams. We currently do not use this. Close the dialog box.
+
+    ![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer2.gif)

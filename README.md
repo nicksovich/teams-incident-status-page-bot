@@ -48,15 +48,15 @@ You will need an account with the following services:
 
 Available commands are: 
 
-``` node
-        @${StatusPage} open [message]
-        @${StatusPage} update [message]
-        @${StatusPage} close [message]
-        @${StatusPage} help`
+```bot
+        @StatusPage open [message]
+        @StatusPage update [message]
+        @StatusPage close [message]
+        @StatusPage help`
 ```
 
 ## Final Result should look like this
 
-![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer2.gif)
-
 ![Reindeer Updates](ReindeerUpdates.gif)
+
+![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer2.gif)

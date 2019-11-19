@@ -10,7 +10,7 @@
       display: none;
     }
     body {
-      padding-top: 1.5rem;
+      padding-top: 1rem;
     }
     .jumbotron {
       border-radius: 0px;
@@ -38,6 +38,7 @@
     }">
       <div class="container" v-if="!loading">
         <h1 v-if="isIncidentActive" class="display-3">Oh No!</h1>
+        <h4>Here's what we know:</h4>
         <h1 v-else class="display-3">All Systems Go!</h1>
       </div>
     </div>
@@ -49,7 +50,6 @@
           <div v-if="isIncidentActive">
             <h2>Something is wrong.</h2>
             <img src="https://func32qds6oyxvnsm.blob.core.windows.net/images/reindeer.gif">
-            <h4>Here's what we know:</h4>
             <hr />
             <div v-for="status in activeIncident.statuses">
               <small class="text-muted">{{ status.timestamp }} - {{ status.type }} - {{ status.from }}</small>

@@ -48,11 +48,13 @@
         <div class="col-md-12">
           <div v-if="isIncidentActive">
             <h2>Something is wrong. Here's what we know:</h2>
+            <h3>Here's what we know:</h3>
             <hr />
             <div v-for="status in activeIncident.statuses">
               <small class="text-muted">{{ status.timestamp }} - {{ status.type }} - {{ status.from }}</small>
               <p>{{ status.text | formatStatusText }}</p>
               <hr />
+              <img src="img\reindeer.gif">
             </div>
           </div>
 
@@ -65,6 +67,7 @@
                 <p>{{ status.text | formatStatusText }}</p>
               </div>              
               <hr />
+              <img src="img\reindeer4.gif">
             </div>
           </div>
         </div>

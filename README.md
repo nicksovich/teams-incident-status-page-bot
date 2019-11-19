@@ -1,6 +1,6 @@
-# Reindeer Status bot
+# Reindeer Status
 
-![](https://github.com/jasonhand/teams-incident-status-page-bot/blob/master/img/reindeer3.gif)
+![Reindeer](img/reindeer3.gif)
 
 ## Deployment instructions:
 

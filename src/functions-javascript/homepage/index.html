@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-md-12">
           <div v-if="isIncidentActive">
-            <h2>Active Incident</h2>
+            <h2>Something is wrong. Here's what we know:</h2>
             <hr />
             <div v-for="status in activeIncident.statuses">
               <small class="text-muted">{{ status.timestamp }} - {{ status.type }} - {{ status.from }}</small>

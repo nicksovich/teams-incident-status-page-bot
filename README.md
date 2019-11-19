@@ -6,6 +6,13 @@
 
 The blue button below will deploy all resources needed for this solution in to the Resource Group and Azure region of your choice. The name you choose also determines the URL used to view the Status Page as well as the incoming URL used to trigger updates.
 
+### Prerequisites
+
+You will need an account with the following services: 
+
+- [Microsoft Azure](https://portal.azure.com)
+- [Microsoft Teams](https://teams.microsoft.com)
+
 ---
 
 ## Follow These Steps:
@@ -26,7 +33,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
 ---
 
-1. Last, open Teams and navigate to the "Apps" page of the team in which you want to create the bot. Click "Create outgoing webhook".
+4. Last, open Teams and navigate to the "Apps" page of the team in which you want to create the bot. Click "Create outgoing webhook".
 
     - Use `StatusPage` as the bot name (this is hardcoded, for now). 
     - Paste in the function URL, and enter a description and press the create button.
@@ -37,7 +44,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
     ![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer3.gif)
 
-2. Open Teams and update the status page by typing `@StatusPage` to summon the bot followed by `open We are experiencing a problem. Standby for more information`
+5. Open Microsoft Teams and update the status page by typing `@StatusPage` to summon the bot followed by `open We are experiencing a problem. Standby for more information`
 
 ## Final Result should look like this
 

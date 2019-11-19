@@ -1,6 +1,6 @@
 # Reindeer Status
 
-![Reindeer](img/reindeer3.gif)
+![Reindeer](/src/functions-javascript/homepage/img/reindeer2.gif)
 
 ## Deployment instructions:
 

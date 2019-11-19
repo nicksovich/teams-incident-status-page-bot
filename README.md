@@ -1,12 +1,12 @@
-# Teams incident status bot
+# Reindeer Status bot
 
-![demo](tailwind-incident-bot.gif)
+![](https://github.com/jasonhand/teams-incident-status-page-bot/blob/master/img/reindeer3.gif)
 
 ## Deployment instructions:
 
 - Create the Azure Function app, Storage account, and SignalR Service with this button: [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
-- Incident statuses are stored in a table in the Storage account, but there's no way to create this table with ARM. In the Azure portal, open the Storage account and add a table named `statuses`.
+- Individual statuses are stored in a table in the Storage account, but there's no way to create this table with ARM. In the Azure portal, open the Storage account and add a table named `statuses`.
 
     ![Create table](create-table.png)
 

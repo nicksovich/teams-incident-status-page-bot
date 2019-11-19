@@ -19,7 +19,7 @@ You will need an account with the following services:
 
 1. Create the Azure Function app, Storage account, and SignalR Service with this button: [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
->This will begin deploying everything needed for the solution and will provide a link to the public facing URL of the Status Pagea as well as a link to your new resource group where you will continue with step 2.
+>This will begin deploying everything needed for the solution and will provide a link to the public facing URL of the Status Page as well as a link to your new resource group where you will continue with step 2.
 
 ---
 

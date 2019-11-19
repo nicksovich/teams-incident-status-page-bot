@@ -8,7 +8,7 @@
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": "https://github.com/anthonychu/teams-incident-status-page-bot"
+      "defaultValue": "https://github.com/jasonhand/teams-incident-status-page-bot"
     },
     "branch": {
       "type": "string",

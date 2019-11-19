@@ -55,8 +55,5 @@ Available commands are:
         @StatusPage help`
 ```
 
-## Final Result should look like this
-
-![Reindeer Updates](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
 
 ![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer2.gif)

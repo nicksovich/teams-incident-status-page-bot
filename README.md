@@ -4,7 +4,13 @@ Santa and his reindeer get almost all the credit when it comes to delivering gif
 
 But if it weren't for the elves on the Engineering & IT teams building, operating, and supporting the systems that help make all that "magic" happen, there would be a lot of dissapointed children around the world on Christmas day.
 
-When the systems that help Santa and his reindeer make their deliveries experience problems, elves are immediately dispatched to diagnose and restore service. During those tense disruptions, it's important everyone stay "in the know" about what is known, who is doing something about it, and when we should expect further updates.
+When then there's a problem with the systems that help Santa and his reindeer find and deliver gifts to children all around the world, elves are immediately dispatched to diagnose and restore service. 
+
+During those tense disruptions, it's important everyone stay "in the know" about:
+
+- What is known? 
+- Who is doing something about it?
+- When we should expect further updates?
 
 ![Reindeer](https://jhandcdn.blob.core.windows.net/blob/reindeer.gif)
 

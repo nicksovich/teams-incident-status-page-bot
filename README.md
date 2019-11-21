@@ -8,9 +8,9 @@ When then there's a problem with the systems that help Santa and his reindeer fi
 
 During those tense disruptions, it's important everyone stay "in the know" about:
 
-- What is known? 
-- Who is doing something about it?
-- When we should expect further updates?
+- Who is affected
+- What is being about it
+- When we should expect further updates
 
 ![Reindeer](https://jhandcdn.blob.core.windows.net/blob/reindeer.gif)
 
@@ -22,7 +22,7 @@ Build a method to communicate the current status and running log of *service dis
 
 Santa's globally distributed team of helpers can use their mobile phones to immediately update the rest of the team the status of service disruptions via a web page that refreshes without user interaction. Additionally, it will provide a running log of each update received over time for greater context and awareness.
 
-![](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
+[![screenshot](img/ReindeerStatusScreenshot.png)](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
 
 #### Tech Used
 

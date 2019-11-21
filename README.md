@@ -22,6 +22,8 @@ Build a method to communicate the current status and running log of *service dis
 
 Santa's globally distributed team of helpers can use their mobile phones to immediately update the rest of the team the status of service disruptions via a web page that refreshes without user interaction. Additionally, it will provide a running log of each update received over time for greater context and awareness.
 
+>**NOTE:** Click the image below ([or here](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)) to see the final result
+
 [![screenshot](img/ReindeerStatusScreenshot.png)](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
 
 #### Tech Used
@@ -131,7 +133,7 @@ To learn more about the full demonstration, view the repo for "[OPS20 - Respondi
 - w/ Azure Functions: [https://docs.microsoft.com/azure/azure-signalr/signalr-concept-azure-functions](https://cda.ms/178)
 - Learn: [https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/](https://cda.ms/179)
 
-**Application Insights:**
+**Application Insights (Part of Azure Monitor):**
 - Product: [https://azure.microsoft.com/services/monitor/](https://cda.ms/17b)
 - Docs: [https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview](https://cda.ms/17b)
 - Learn: [https://docs.microsoft.com/learn/modules/instrument-web-app-code-with-application-insights/](https://cda.ms/17d)

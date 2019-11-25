@@ -12,8 +12,6 @@ During those tense disruptions, it's important everyone stay "in the know" about
 - What is being about it
 - When we should expect further updates
 
-![Reindeer](https://jhandcdn.blob.core.windows.net/blob/reindeer.gif)
-
 ## Challenge
 
 Build a method to communicate the current status and running log of *service disruptions* to a global audience.
@@ -63,7 +61,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
 #### Steps To Deploy:
 
-**1.** Create the Azure Function app, Storage account, and SignalR Service with this button: [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
+**1.** Create the Azure Function app, Storage account, and SignalR Service with this button: [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 >This will begin deploying everything needed for the solution and will provide a link to the public facing URL of the Status Page as well as a link to your new resource group where you will continue with step 2.
 
@@ -100,9 +98,6 @@ Available commands are:
         @StatusPage close [message]
         @StatusPage help`
 ```
-
-
-![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer2.gif)
 
 ---
 

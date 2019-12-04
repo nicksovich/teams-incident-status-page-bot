@@ -22,18 +22,18 @@ Santa's globally distributed team of helpers can use their mobile phones to imme
 
 >**NOTE:** Click the image below ([or here](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)) to see the final result
 
-[![screenshot](img/ReindeerStatusScreenshot.png)](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
+![screenshot](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
 
 #### Tech Used
 
 The brains behind this solution is an Azure Function (running Node.js) that is triggered via outgoing webhook (from Microsoft Teams). The function modifies an index.html file stored in a "web server" served from a serverless SMB file share in Azure Storage.
 
-Users can `open`, `update`, and `close` "status updates" by invoking them from within a chat channel. 
+Users can `open`, `update`, and `close` "status updates" by invoking them from within a chat channel.
 
 The text that follows the command will be stored and displayed on the site below the colored (Red or Green) header.
 
-In addition to the website files, an Azure Table will be used for storing the history of each status update. 
->**NOTE:** The table is not provisioned with the deployment script. It needs to be manually created in Step 2 below. 
+In addition to the website files, an Azure Table will be used for storing the history of each status update.
+>**NOTE:** The table is not provisioned with the deployment script. It needs to be manually created in Step 2 below.
 
 SignalR manages refreshing the client so that changes made to the HTML are immediately visible without any end user interaction.
 
@@ -69,7 +69,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
 **2.** In the Azure portal, open the Storage account and add a table named `statuses`. You do not need to set any properties or add records.
 
-![Create table](CreateStatusesTable.gif)
+![Create table](https://jhandcdn.blob.core.windows.net/blob/CreateStatusesTable.gif)
 
 ---
 
@@ -84,13 +84,13 @@ The blue button below will deploy all resources needed for this solution in to t
 
 > You will be prompted with a secret code for validating webhook calls from Teams. We currently do not use this. Close the dialog box.
 
-![Create outgoing webhook](Webhook.gif)    
+![Create outgoing webhook](https://jhandcdn.blob.core.windows.net/blob/Webhook.gif)
 
 ![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer3.gif)
 
 **5.** Open Microsoft Teams and update the status page by typing `@StatusPage` to summon the bot followed by `open We are experiencing a problem. Standby for more information`
 
-Available commands are: 
+Available commands are:
 
 ```bot
         @StatusPage open [message]
@@ -105,37 +105,43 @@ This solution is based on the on-stage demonstrations built for Microsoft Ignite
 
 To learn more about the full demonstration, view the repo for "[OPS20 - Responding To Incidents]()". Huge Thanks to [Anthony Chu]() in bringing this to life.
 
+## Important Resources ⭐️
 
-#### Resources
+✅ **Microsoft Azure:** [https://azure.microsoft.com/](https://azure.microsoft.com/?WT.mc_id=25daysofserverless-github-cxa)
 
-**Microsoft Azure:** [https://azure.microsoft.com/](https://cda.ms/16X)
+✅ **Azure Functions:**
 
-**Azure Functions:**
-- Product: [https://azure.microsoft.com/services/functions/](https://cda.ms/16Y)
-- Docs: [https://docs.microsoft.com/azure/azure-functions/](https://cda.ms/16Z)
-- Learn: [https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/](https://cda.ms/170)
-- How To Get Started (Video): [https://azure.microsoft.com/resources/videos/get-started-with-azure-functions/](https://cda.ms/171)
-- Supported Languages: [https://docs.microsoft.com/azure/azure-functions/supported-languages](https://cda.ms/172)
+-   Product: [https://azure.microsoft.com/services/functions/](https://azure.microsoft.com/services/functions/?WT.mc_id=25daysofserverless-github-cxa)
+-   Docs: [https://docs.microsoft.com/azure/azure-functions/](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=25daysofserverless-github-cxa)
+-   Learn: [https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/?WT.mc_id=25daysofserverless-github-cxa)
+-   How To Get Started (Video): [https://azure.microsoft.com/resources/videos/get-started-with-azure-functions/](https://azure.microsoft.com/resources/videos/get-started-with-azure-functions/?WT.mc_id=25daysofserverless-github-cxa)
+-   Supported Languages: [https://docs.microsoft.com/azure/azure-functions/supported-languages/](https://docs.microsoft.com/azure/azure-functions/supported-languages/?WT.mc_id=25daysofserverless-github-cxa)
 
-**Azure Storage:**
-- Product: [https://azure.microsoft.com/services/storage/](https://cda.ms/173)
-- Docs: [https://docs.microsoft.com/azure/storage/](https://cda.ms/174)
-- Learn: [https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/](https://cda.ms/175)
+✅ **Azure Storage:**
 
-**SignalR:**
-- Product: [https://azure.microsoft.com/services/signalr-service/](https://cda.ms/176)
-- Docs: [https://docs.microsoft.com/azure/azure-signalr/signalr-overview](https://cda.ms/177)
-- w/ Azure Functions: [https://docs.microsoft.com/azure/azure-signalr/signalr-concept-azure-functions](https://cda.ms/178)
-- Learn: [https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/](https://cda.ms/179)
+-   Product: [https://azure.microsoft.com/services/storage/](https://azure.microsoft.com/services/storage/?WT.mc_id=25daysofserverless-github-cxa)
+-   Docs: [https://docs.microsoft.com/azure/storage/](https://docs.microsoft.com/azure/storage/?WT.mc_id=25daysofserverless-github-cxa)
+-   Learn: [https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/](https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/?WT.mc_id=25daysofserverless-github-cxa)
 
-**Application Insights (Part of Azure Monitor):**
-- Product: [https://azure.microsoft.com/services/monitor/](https://cda.ms/17b)
-- Docs: [https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview](https://cda.ms/17b)
-- Learn: [https://docs.microsoft.com/learn/modules/instrument-web-app-code-with-application-insights/](https://cda.ms/17d)
+✅ **SignalR:**
 
-**Microsoft Teams:**
-- Product: [https://products.office.com/microsoft-teams/group-chat-software](https://cda.ms/17f)
-- Docs: [https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams](https://cda.ms/17g)
-- Learn: [https://docs.microsoft.com/learn/modules/m365-teams-collab-apps-bots-connectors/](https://cda.ms/17h)
+-   Product: [https://azure.microsoft.com/services/signalr-service/](https://azure.microsoft.com/services/signalr-service/?WT.mc_id=25daysofserverless-github-cxa)
+-   Docs: [https://docs.microsoft.com/azure/azure-signalr/signalr-overview/](https://docs.microsoft.com/azure/azure-signalr/signalr-overview/?WT.mc_id=25daysofserverless-github-cxa)
+-   w/ Azure Functions: [https://docs.microsoft.com/azure/azure-signalr/signalr-concept-azure-functions/](https://docs.microsoft.com/azure/azure-signalr/signalr-concept-azure-functions/?WT.mc_id=25daysofserverless-github-cxa)
+-   Learn: [https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/](https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/?WT.mc_id=25daysofserverless-github-cxa)
+
+✅ **Application Insights:**
+
+-   Product: [https://azure.microsoft.com/services/monitor/](https://azure.microsoft.com/services/monitor/?WT.mc_id=25daysofserverless-github-cxa)
+-   Docs: [https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview/](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview/?WT.mc_id=25daysofserverless-github-cxa)
+-   Learn: [https://docs.microsoft.com/learn/modules/instrument-web-app-code-with-application-insights/](https://docs.microsoft.com/learn/modules/instrument-web-app-code-with-application-insights/?WT.mc_id=25daysofserverless-github-cxa)
+
+✅ **Microsoft Teams:**
+
+-   Product: [https://products.office.com/microsoft-teams/group-chat-software](https://products.office.com/microsoft-teams/group-chat-software)
+-   Docs: [https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams/](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams/?WT.mc_id=25daysofserverless-github-cxa)
+-   Learn: [https://docs.microsoft.com/learn/modules/m365-teams-collab-apps-bots-connectors/](https://docs.microsoft.com/learn/modules/m365-teams-collab-apps-bots-connectors/?WT.mc_id=25daysofserverless-github-cxa)
+
+✅ **[Free E-Book - Azure Serverless Computing Cookbook, Second Edition](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?WT.mc_id=25daysofserverless-github-cxa)**
 
 ---

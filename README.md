@@ -143,5 +143,3 @@ To learn more about the full demonstration, view the repo for "[OPS20 - Respondi
 -   Learn: [https://docs.microsoft.com/learn/modules/m365-teams-collab-apps-bots-connectors/](https://docs.microsoft.com/learn/modules/m365-teams-collab-apps-bots-connectors/?WT.mc_id=25daysofserverless-github-cxa)
 
 ✅ **[Free E-Book - Azure Serverless Computing Cookbook, Second Edition](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?WT.mc_id=25daysofserverless-github-cxa)**
-
----

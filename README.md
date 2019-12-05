@@ -22,9 +22,9 @@ Santa's globally distributed team of helpers can use their mobile phones to imme
 
 >**NOTE:** Click the image below ([or here](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)) to see the final result
 
-![screenshot](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
+[![](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeamsStatic.png)](https://jhandcdn.blob.core.windows.net/blob/UpdateFromTeams.gif)
 
-#### Tech Used
+### Tech Used
 
 The brains behind this solution is an Azure Function (running Node.js) that is triggered via outgoing webhook (from Microsoft Teams). The function modifies an index.html file stored in a "web server" served from a serverless SMB file share in Azure Storage.
 
@@ -39,13 +39,6 @@ SignalR manages refreshing the client so that changes made to the HTML are immed
 
 Application Insights is used to provide observability on the operation, behavior, and usage of the solution and is "best practice" for building highly available and reliable system... which we expect from any Status Page solution.
 
-|*Quick Links*|Docs|Learn|
-|---|---|---|
-|Azure Function|[Link](https://cda.ms/16Z)|[Link](https://cda.ms/170)
-|Azure Storage|[Link](https://cda.ms/174)|[Link](https://cda.ms/175)
-|SignalR Services|[Link](https://cda.ms/177)|[Link](https://cda.ms/179)
-|Application Insights|[Link](https://cda.ms/17b)| [Link](https://cda.ms/17d)
-
 ### Prerequisites
 
 You will need an account with the following services: 
@@ -55,11 +48,11 @@ You will need an account with the following services:
 
 ---
 
-### Deployment Instructions:
+### Deployment Instructions
 
 The blue button below will deploy all resources needed for this solution in to the Resource Group and Azure region of your choice. The name you choose also determines the URL used to view the Status Page as well as the incoming URL used to trigger updates.
 
-#### Steps To Deploy:
+#### Steps To Deploy
 
 **1.** Create the Azure Function app, Storage account, and SignalR Service with this button: [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
@@ -84,7 +77,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
 > You will be prompted with a secret code for validating webhook calls from Teams. We currently do not use this. Close the dialog box.
 
-![Create outgoing webhook](https://jhandcdn.blob.core.windows.net/blob/Webhook.gif)
+[![](https://jhandcdn.blob.core.windows.net/blob/WebhookStatic.png)](https://jhandcdn.blob.core.windows.net/blob/Webhook.gif)
 
 ![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer3.gif)
 
@@ -101,9 +94,9 @@ Available commands are:
 
 ---
 
-This solution is based on the on-stage demonstrations built for Microsoft Ignite The Tour. 
+This solution is based on the on-stage demonstrations built for Microsoft Ignite The Tour.
 
-To learn more about the full demonstration, view the repo for "[OPS20 - Responding To Incidents]()". Huge Thanks to [Anthony Chu]() in bringing this to life.
+To learn more about the full demonstration, view the repo for "[OPS20 - Responding To Incidents](https://myignite.techcommunity.microsoft.com/sessions/82997/?WT.mc_id=25daysofserverless-github-cxa)". Huge Thanks to [Anthony Chu](https://github.com/anthonychu) in bringing this to life.
 
 ## Important Resources ⭐️
 

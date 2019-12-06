@@ -68,8 +68,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
 **3.** Navigate to the function app, and open the `teams-webhook` function. Click "Get Function URL" and copy the URL. 
 
-
-**4.**Open the URL of the Function in a new tab. This is "Status Page" that will change automatically when updated. It is NOT the same as the "Get Function URL" used in the next step.
+**4.** Open the URL of the Function in a new tab. This is "Status Page" that will change automatically when updated. It is NOT the same as the "Get Function URL" used in the next step.
 
 ![](https://jhandcdn.blob.core.windows.net/blob/ReindeerGuidanceSystemURL.png)
 

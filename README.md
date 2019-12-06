@@ -66,11 +66,16 @@ The blue button below will deploy all resources needed for this solution in to t
 
 ---
 
-**3.** Navigate to the function app, and open the `teams-webhook` function. Click "Get Function URL" and copy the URL.
+**3.** Navigate to the function app, and open the `teams-webhook` function. Click "Get Function URL" and copy the URL. 
+
+
+**4.**Open the URL of the Function in a new tab. This is "Status Page" that will change automatically when updated. It is NOT the same as the "Get Function URL" used in the next step.
+
+![](https://jhandcdn.blob.core.windows.net/blob/ReindeerGuidanceSystemURL.png)
 
 ---
 
-**4.** Last, open Teams and navigate to the "Apps" page of the team in which you want to create the bot. Click "Create outgoing webhook".
+**5.** Open Microsoft Teams and navigate to the "Apps" page of the team in which you want to create the bot. Click "Create outgoing webhook".
 
 - Use `StatusPage` as the bot name (this is hardcoded, for now). 
 - Paste in the function URL, and enter a description and press the create button.
@@ -79,9 +84,7 @@ The blue button below will deploy all resources needed for this solution in to t
 
 [![](https://jhandcdn.blob.core.windows.net/blob/WebhookStatic.png)](https://jhandcdn.blob.core.windows.net/blob/Webhook.gif)
 
-![Reindeer2](https://jhandcdn.blob.core.windows.net/blob/reindeer3.gif)
-
-**5.** Open Microsoft Teams and update the status page by typing `@StatusPage` to summon the bot followed by `open We are experiencing a problem. Standby for more information`
+**6.** In Microsoft Teams, update the status page by typing `@StatusPage` to summon the bot followed by `open We are experiencing a problem. Standby for more information`
 
 Available commands are:
 
@@ -96,7 +99,8 @@ Available commands are:
 
 This solution is based on the on-stage demonstrations built for Microsoft Ignite The Tour.
 
-To learn more about the full demonstration, view the repo for "[OPS20 - Responding To Incidents](https://myignite.techcommunity.microsoft.com/sessions/82997/?WT.mc_id=25daysofserverless-github-cxa)". Huge Thanks to [Anthony Chu](https://github.com/anthonychu) in bringing this to life.
+To learn more about the full demonstration, view the repo for "[OPS20 - Responding To Incidents](https://myignite.techcommunity.microsoft.com/sessions/82997/?WT.mc_id=25daysofserverless-devto-cxa)". Huge Thanks to [Anthony Chu](https://github.com/anthonychu) in bringing this to life.
+
 
 ## Important Resources ⭐️
 

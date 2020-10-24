@@ -37,8 +37,8 @@
       'incident-inactive': (!loading && !isIncidentActive)
     }">
       <div class="container" v-if="!loading">
-        <h1 v-if="isIncidentActive" class="display-3">We have a recent development</h1>
-        <h1 v-else class="display-3">No new developments</h1>
+        <h1 v-if="isIncidentActive" class="display-3">No updates</h1>
+        <h1 v-else class="display-3">We have some news</h1>
       </div>
     </div>
   
@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-md-12">
           <div v-if="isIncidentActive">
-            <h2>Something is wrong.</h2>
+            <h2>Something is happening...</h2>
             <img src="https://i.pinimg.com/originals/9b/49/45/9b4945825e3216e7a83b0f13f1b668b4.gif">
             <h4>Here's what we know:</h4>
             <hr />

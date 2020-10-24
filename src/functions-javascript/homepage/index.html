@@ -17,7 +17,7 @@
       color: #fff;
     }
     .jumbotron.incident-active {
-      background-color: rgb(252, 3, 3);
+      background-color: rgb(214, 214, 5);
     }
     .jumbotron.incident-inactive {
       background-color: rgb(5, 214, 5);
@@ -26,7 +26,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Reindeer Status</a>
+    <a class="navbar-brand" href="#">Baby Status</a>
   </nav>
 
   <main role="main" id="app" v-cloak>
@@ -37,8 +37,8 @@
       'incident-inactive': (!loading && !isIncidentActive)
     }">
       <div class="container" v-if="!loading">
-        <h1 v-if="isIncidentActive" class="display-3">Oh No!</h1>
-        <h1 v-else class="display-3">All Systems Go!</h1>
+        <h1 v-if="isIncidentActive" class="display-3">We have a recent development</h1>
+        <h1 v-else class="display-3">No new developments</h1>
       </div>
     </div>
   
@@ -48,7 +48,7 @@
         <div class="col-md-12">
           <div v-if="isIncidentActive">
             <h2>Something is wrong.</h2>
-            <img src="https://jhandcdn.blob.core.windows.net/blob/reindeer.gif">
+            <img src="https://i.pinimg.com/originals/9b/49/45/9b4945825e3216e7a83b0f13f1b668b4.gif">
             <h4>Here's what we know:</h4>
             <hr />
             <div v-for="status in activeIncident.statuses">
@@ -59,7 +59,7 @@
           </div>
 
           <div v-if="!isIncidentActive">
-            <img src="https://jhandcdn.blob.core.windows.net/blob/reindeer4.gif">
+            <img src="https://i.pinimg.com/originals/9b/49/45/9b4945825e3216e7a83b0f13f1b668b4.gif">
             <h2>Status Log</h2>
             <hr />
             <div v-for="incident in pastIncidents">

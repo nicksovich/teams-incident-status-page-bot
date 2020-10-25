@@ -52,7 +52,7 @@
             <h4>Here's what we know:</h4>
             <hr />
             <div v-for="status in activeIncident.statuses">
-              <small class="text-muted">{{ status.timestamp }} - {{ status.type }} - {{ status.from }}</small>
+              <small class="text-muted">{{ status.timestamp | formatDateText }} - {{ status.type }} - {{ status.from }}</small>
               <p>{{ status.text | formatStatusText }}</p>
               <hr />
             </div>
@@ -64,7 +64,7 @@
             <hr />
             <div v-for="incident in pastIncidents">
               <div v-for="status in incident.statuses">
-                <small class="text-muted">{{ status.timestamp }} - {{ status.type }} - {{ status.from }}</small>
+                <small class="text-muted">{{ status.timestamp | formatDateText }} - {{ status.type }} - {{ status.from }}</small>
                 <p>{{ status.text | formatStatusText }}</p>
               </div>              
               <hr />
@@ -139,6 +139,9 @@
       filters: {
         formatStatusText: function(txt) {
           return txt || 'No text entered.'
+        },
+        formatDateText: function(txt) {
+          return new Date(txt).toLocaleString()
         }
       }
     })
